@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+</head>
+<body>
+	<section>
+		<section class="w-100 px-8 py-10">
+			<div class="row d-flex justify-content-center">
+				<div class="col col-md-10 col-lg-8 col-xl-7">
+					<h1 class="text-center">My Profile</h1>
+					<div class="card" style="border-radius: 15px;">
+						<div class="card-body p-4">
+
+							<div class="d-flex">
+								<div class="flex-shrink-0">
+
+									<img th:src="@{/img/Archu.png.jpeg}" alt="Archana's Profile"
+										class="img-fluid" style="width: 180px; border-radius: 10%;">
+
+								</div>
+								<div class="flex-grow-1 ms-3">
+									<h5 class="mb-1">Archana Bansode</h5>
+									<p class="mb-2 pb-1">Software Engineer</p>
+									<div
+										class="d-flex justify-content-start rounded-3 p-2 mb-2 bg-body-tertiary">
+										<div>
+											<p class="small text-muted mb-1">Articles</p>
+											<p class="mb-0">41</p>
+										</div>
+										<div class="px-3">
+											<p class="small text-muted mb-1">Followers</p>
+											<p class="mb-0">976</p>
+										</div>
+										<div>
+											<p class="small text-muted mb-1">Rating</p>
+											<p class="mb-0">8.5</p>
+										</div>
+									</div>
+									<div class="d-flex pt-1">
+										<button type="button" data-mdb-button-init
+											data-mdb-ripple-init
+											class="btn btn-outline-primary me-1 flex-grow-1">Chat</button>
+										<button type="button" data-mdb-button-init
+											data-mdb-ripple-init class="btn btn-primary flex-grow-1">Follow</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+
+</body>
+</html>
